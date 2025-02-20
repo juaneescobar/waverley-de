@@ -1,0 +1,14 @@
+
+version: 2
+
+sources:
+  - name: retail 
+    database: db_waverley 
+    schema: stg  
+    tables:
+      - name: order_items
+        idenfier: raw_order_items
+      - name: orders
+        idenfier: raw_orders
+      - name: products
+        idenfier: dim_products

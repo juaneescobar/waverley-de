@@ -1,0 +1,7 @@
+sqlfluff-templater-dbt==2.3.5
+shandy-sqlfmt[jinjafmt]
+black==24.2.0
+yamlfix==1.16.0
+sqlfluff==0.7.1
+dbt-core
+dbt-postgres

@@ -1,0 +1,8 @@
+SELECT
+    p.category,
+    SUM(oi.quantity * oi.price) AS total_revenue,
+    SUM(oi.quantity) AS total_quantity_sold
+FROM {{ ref('fact_orders') }} oi
+JOIN  {{ ref('dim_products') }} p ON oi.product_id = p.product_id
+GROUP BY p.category
+ORDER BY total_revenue DESC

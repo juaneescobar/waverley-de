@@ -1,0 +1,8 @@
+packages:
+  # See https://hub.getdbt.com/dbt-labs/codegen/latest/
+  - package: dbt-labs/codegen
+    version: 0.12.1
+    
+  # See https://github.com/tnightengale/dbt-meta-testing/tree/0.3.6/
+  - package: tnightengale/dbt_meta_testing
+    version: 0.3.6

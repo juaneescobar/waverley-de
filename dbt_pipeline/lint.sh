@@ -1,0 +1,1 @@
+sqlfluff lint */**/*.sql --dialect $DBT_WAREHOUSE_PROVIDER --disregard-sqlfluffignores

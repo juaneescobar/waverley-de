@@ -1,0 +1,4 @@
+pandas==2.3.5
+boto3==1.36.23
+sqlalchemy==1.4.54
+python-dotenv==1.0.1

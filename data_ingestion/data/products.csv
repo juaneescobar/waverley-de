@@ -1,0 +1,12 @@
+product_id,product_name,category,price
+P001,T-Shirt,Apparel,20.00 P002,Jeans ,Apparel,50.00
+P003,Sneakers,Footwear,80.00
+P004,Laptop,Electronics,1200.00
+P005,Tablet,electronics,300.00 P006,Coffee
+Maker,Kitchen,50.00 P007,Blender,Kitchen,70.00
+P007,Blender,Kitchen,75.00 P008,"Book, The",Books,15.00
+P009,Headphones, Electronics ,100.00
+P010,Backpack,Bags,40.00 P011, Phone ,Electronics,800
+P012,Watch, Accessories ,150.00 P013, , Apparel,25.50
+P014,Gloves,Apparel,ten P015,Desk Lamp,Home, P016,
+Keyboard ,Electronics,12.99$ P002, Jeans, Apparel , 50
