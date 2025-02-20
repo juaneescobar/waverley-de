@@ -39,9 +39,15 @@ dbt_clean = BashOperator(
     dag=dag
 )
 
+dbt_snapshot = BashOperator(
+    task_id="dbt_snapshot",
+    bash_command="cd /home/sachi/airflow/dbt/data_pipeline && dbt source freshness && dbt snapshot",
+    dag=dag
+)
+
 dbt_run = BashOperator(
     task_id="dbt_run",
-    bash_command="cd /home/sachi/airflow/dbt/data_pipeline && dbt source freshness && dbt deps && dbt run",
+    bash_command="cd /home/sachi/airflow/dbt/data_pipeline && dbt deps && dbt run",
     dag=dag
 )
 
@@ -51,4 +57,4 @@ dbt_test = BashOperator(
     dag=dag
 )
 
-task_print_cwd >> ingest_data >> dbt_clean >> dbt_run >> dbt_test
+task_print_cwd >> ingest_data >> dbt_snapshot >> dbt_clean >> dbt_run >> dbt_test
